@@ -1,26 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="App-header">
       <ul className="nav  nav-fill">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">
-            Active
-          </a>
+          <Link className="nav-link active" to="/">
+            Home
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Much longer nav link
-          </a>
+          <Link className="nav-link" to="/contact">
+            Contact Me
+          </Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
-            Link
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled">Disabled</a>
+          <Link className="nav-link" to="/about">
+            About
+          </Link>
         </li>
       </ul>
     </div>
